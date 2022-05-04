@@ -1,0 +1,44 @@
+package dcv1;
+
+
+import java.math.BigDecimal;
+
+public class room {
+    int number;
+    int bed;
+    boolean isSea;
+    int price;
+/*
+konstruktor tridy room, ktery vola hodnoty, bed,number, price a pravdovostni hodnotu isSea
+ */
+    public room(int number, int bed, boolean isSea, int price){
+        this.number = number;
+        this.bed = bed;
+        this.isSea= isSea;
+        this.price = price;
+    }
+
+    public int getNumber() {
+        return number;
+    }
+
+    public int getBed() {
+        return bed;
+    }
+
+    public boolean isSea() {
+        return isSea;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+
+    /*
+    metoda nam vrati ztrucny popis objektu
+     */
+    public String getDesription() {
+        return "Cislo pokoje je: " + number + ", pocet posteli v pokoji: "  + bed + ", je s vyhledem na more: " + isSea + ", cena " + price;
+    }
+}
