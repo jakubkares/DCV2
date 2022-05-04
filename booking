@@ -1,0 +1,38 @@
+  package dcv1;
+
+import java.time.LocalDate;
+
+public class Booking {
+   public LocalDate start, end;
+    public String pobyt;
+    public int number;
+    /*
+    kontsrutor jehoz, kterz vola hodnosty zacatku a konce pobytu, zdali je pobyt rekreacni nebo pracovni a cislo pokoje
+     */
+    public Booking (LocalDate start, LocalDate end , String pobyt, int number){
+        this.start = start;
+        this.end = end;
+        this.pobyt = pobyt;
+
+    }
+
+    public LocalDate getStart() {
+        return start;
+    }
+
+    public LocalDate getEnd() {
+        return end;
+    }
+
+    public String getPobyt() {
+        return pobyt;
+    }
+
+    /*
+    metoda vraci udaje o pobytu
+     */
+
+    public String getDescription()  {
+        return "pobyt na pokoji " + number + " je od " + start + " do " + end + " a je to pobyt " + pobyt;
+    }
+}
