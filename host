@@ -1,0 +1,47 @@
+package dcv1;
+
+
+import java.time.LocalDate;
+
+public class Guest {
+    String name;
+    LocalDate born;
+    String lastName;
+/*konstruktor, ktery prebira hodnotu name lastname a born
+ */
+    public  Guest (String name , String lastName, LocalDate born){
+        this.name=name;
+        this.born = born;
+        this.lastName = lastName;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getBorn() {
+        return born;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setBorn(LocalDate born) {
+        this.born = born;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+//metoda ktera vraci udaje o hostovy
+    public String getDescription(){
+        return "jmeno osoby: " + name+ " " + lastName + ", narozeni osoby: " + born;
+    }
+
+
+}
